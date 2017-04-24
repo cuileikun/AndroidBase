@@ -39,25 +39,25 @@ public class AndroidBaseFouthActivity extends QkActivity implements View.OnClick
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_yuan_ma:
-                startActivity(new Intent(AndroidBaseFouthActivity.this,YuanMaActivity.class));
+                startActivity(new Intent(AndroidBaseFouthActivity.this, YuanMaActivity.class));
                 break;
             case R.id.btn_anr:
-                startActivity(new Intent(AndroidBaseFouthActivity.this,AnrActivity.class));
+                startActivity(new Intent(AndroidBaseFouthActivity.this, AnrActivity.class));
                 break;
             case R.id.btn_look_picture:
-                startActivity(new Intent(AndroidBaseFouthActivity.this,LookPictureActivity.class));
+                startActivity(new Intent(AndroidBaseFouthActivity.this, LookPictureActivity.class));
                 break;
             case R.id.btn_modify_look_picture:
-                startActivity(new Intent(AndroidBaseFouthActivity.this,ModifyLookPictureActivity.class));
+                startActivity(new Intent(AndroidBaseFouthActivity.this, ModifyLookPictureActivity.class));
                 break;
             case R.id.btn_handler_api:
-                startActivity(new Intent(AndroidBaseFouthActivity.this,HandlerActivity.class));
+                startActivity(new Intent(AndroidBaseFouthActivity.this, HandlerActivity.class));
                 break;
             case R.id.btn_news:
-                startActivity(new Intent(AndroidBaseFouthActivity.this,NewsActivity.class));
+                startActivity(new Intent(AndroidBaseFouthActivity.this, NewsActivity.class));
                 break;
             case R.id.btn_smartimageview:
-                startActivity(new Intent(AndroidBaseFouthActivity.this,SmartImageViewActivity.class));
+                startActivity(new Intent(AndroidBaseFouthActivity.this, SmartImageViewActivity.class));
                 break;
         }
     }
@@ -66,6 +66,13 @@ public class AndroidBaseFouthActivity extends QkActivity implements View.OnClick
     public void addListeners() {
         super.addListeners();
         btn_yuan_ma.setOnClickListener(AndroidBaseFouthActivity.this);
+        btn_anr.setOnClickListener(AndroidBaseFouthActivity.this);
+        btn_look_picture.setOnClickListener(AndroidBaseFouthActivity.this);
+        btn_modify_look_picture.setOnClickListener(AndroidBaseFouthActivity.this);
+        btn_handler_api.setOnClickListener(AndroidBaseFouthActivity.this);
+        btn_news.setOnClickListener(AndroidBaseFouthActivity.this);
+        btn_smartimageview.setOnClickListener(AndroidBaseFouthActivity.this);
+
     }
 
     @Override
