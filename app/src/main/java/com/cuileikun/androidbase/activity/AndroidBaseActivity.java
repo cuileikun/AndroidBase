@@ -14,6 +14,7 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
     private RelativeLayout day_one_rl;
     private RelativeLayout day_two_rl;
     private RelativeLayout day_three_rl;
+    private RelativeLayout day_four_rl;
 
     @Override
     public int getLayoutId() {
@@ -26,6 +27,7 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
         day_one_rl = (RelativeLayout) findViewById(R.id.day_one_rl);
         day_two_rl = (RelativeLayout) findViewById(R.id.day_two_rl);
         day_three_rl = (RelativeLayout) findViewById(R.id.day_three_rl);
+        day_four_rl = (RelativeLayout) findViewById(R.id.day_four_rl);
 
     }
 
@@ -40,6 +42,7 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
         day_one_rl.setOnClickListener(AndroidBaseActivity.this);
         day_two_rl.setOnClickListener(AndroidBaseActivity.this);
         day_three_rl.setOnClickListener(AndroidBaseActivity.this);
+        day_four_rl.setOnClickListener(AndroidBaseActivity.this);
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -60,6 +63,9 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
                 break;
             case R.id.day_three_rl:
                 startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseThirdActivity.class));
+                break;
+            case R.id.day_four_rl:
+                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseFouthActivity.class));
                 break;
 
         }

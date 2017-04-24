@@ -47,6 +47,15 @@
         <activity android:name=".activity.ListviewActivity" />
         <activity android:name=".activity.ContactActivity" />
         <activity android:name=".activity.ArrayAdapterActivity" />
+
+        <activity android:name=".activity.AndroidBaseFouthActivity" />
+        <activity android:name=".activity.YuanMaActivity" />
+        <activity android:name=".activity.AnrActivity" />
+        <activity android:name=".activity.LookPictureActivity" />
+        <activity android:name=".activity.ModifyLookPictureActivity" />
+        <activity android:name=".activity.HandlerActivity" />
+        <activity android:name=".activity.NewsActivity" />
+        <activity android:name=".activity.SmartImageViewActivity" />
     </application>
 
 </manifest>

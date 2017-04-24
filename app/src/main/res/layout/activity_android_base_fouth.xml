@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_yuan_ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="1_源码查看起" />
+
+    <Button
+        android:id="@+id/btn_anr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="2_演示anr" />
+    ]
+
+    <Button
+        android:id="@+id/btn_look_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="3_图片查看器" />
+
+    <Button
+        android:id="@+id/btn_modify_look_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="4_使用runonuiThread修改图片查看器" />
+
+    <Button
+        android:id="@+id/btn_handler_api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="5_handler_api" />
+
+    <Button
+        android:id="@+id/btn_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="6_新闻客户端" />
+
+    <Button
+        android:id="@+id/btn_smartimageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="7_自定义smartimageview" />
+
+
+</LinearLayout>
