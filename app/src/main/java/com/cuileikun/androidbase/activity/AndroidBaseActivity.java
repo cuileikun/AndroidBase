@@ -1,5 +1,6 @@
 package com.cuileikun.androidbase.activity;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.RelativeLayout;
 
@@ -52,10 +53,10 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.day_one_rl:
-//                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseFirstActivity.class));
+                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseFirstActivity.class));
                 break;
             case R.id.day_two_rl:
-//                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseSecondActivity.class));
+                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseSecondActivity.class));
                 break;
             case R.id.day_three_rl:
 //                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseThirdActivity.class));

@@ -2,6 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cuileikun.androidbase">
 
+    <!-- 拨打电话权限 add by clk on -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 拨打电话权限 add by clk off -->
+    <!-- 短信验证需要的权限start -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!-- 短信验证需要的权限stop -->
+    <!-- 发送短信需要的权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +28,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".activity.AndroidBaseActivity" />
+
+        <activity android:name=".activity.AndroidBaseFirstActivity" />
+
+        <activity android:name=".activity.AndroidBaseSecondActivity" />
+        <activity android:name=".activity.DoXmlActivity" />
+        <activity android:name=".activity.UserLoginDataActivity" />
+        <activity android:name=".activity.FilePermissionActivity" />
+        <activity android:name=".activity.UserLoginSdcardActivity" />
+        <activity android:name=".activity.GetSdcardSizeActivity" />
+        <activity android:name=".activity.UserLoginSpActivity" />
+        <activity android:name=".activity.LogActivity" />
     </application>
 
 </manifest>
