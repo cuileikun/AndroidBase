@@ -59,7 +59,7 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
                 startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseSecondActivity.class));
                 break;
             case R.id.day_three_rl:
-//                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseThirdActivity.class));
+                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseThirdActivity.class));
                 break;
 
         }
