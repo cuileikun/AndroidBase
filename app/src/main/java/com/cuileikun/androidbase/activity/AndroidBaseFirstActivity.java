@@ -1,5 +1,6 @@
 package com.cuileikun.androidbase.activity;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -9,7 +10,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import com.cuileikun.androidbase.R;
+import com.cuileikun.androidbase.utils.PermissionUtil;
+import com.cuileikun.androidbase.utils.PermissionsChecker;
 import com.qk.applibrary.activity.QkActivity;
 import com.qk.applibrary.util.CommonUtil;
 
@@ -28,10 +32,14 @@ public class AndroidBaseFirstActivity extends QkActivity implements View.OnClick
     private EditText et_num;
     private EditText et_num_second;
     private EditText et_sms;
+    private EditText et_num_third;
+    private Button btn_call_phone_dial;
 
     @Override
     public void initViews() {
         mContext = this;
+        // 6.0动态权限三部曲第一步 拨打电话的权限
+        grantPermission();
         et_num = (EditText) findViewById(R.id.et_num);
         btn_call_phone = (Button) findViewById(R.id.btn_call_phone);
 
@@ -40,6 +48,10 @@ public class AndroidBaseFirstActivity extends QkActivity implements View.OnClick
         btn_send_message = (Button) findViewById(R.id.btn_send_message);
 
         btn_click = (Button) findViewById(R.id.btn_click);
+
+        et_num_third = (EditText) findViewById(R.id.et_num_third);
+        btn_call_phone_dial = (Button) findViewById(R.id.btn_call_phone_dial);
+
     }
 
 
@@ -48,6 +60,7 @@ public class AndroidBaseFirstActivity extends QkActivity implements View.OnClick
         btn_call_phone.setOnClickListener(AndroidBaseFirstActivity.this);
         btn_send_message.setOnClickListener(AndroidBaseFirstActivity.this);
         btn_click.setOnClickListener(AndroidBaseFirstActivity.this);
+        btn_call_phone_dial.setOnClickListener(AndroidBaseFirstActivity.this);
     }
 
     @Override
@@ -59,19 +72,12 @@ public class AndroidBaseFirstActivity extends QkActivity implements View.OnClick
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_call_phone:
-
-                String num = et_num.getText().toString().trim();
-                //创建一个Intent
-                Intent intent = new Intent();
-                //设置我们的动作(Action)
-                intent.setAction(Intent.ACTION_CALL);
-                //设置数据URL :http://www.baidu.com
-                Uri data = Uri.parse("tel:" + num);
-                intent.setData(data);//uri
-                //启动Activity
-                startActivity(intent);
-
+                doCallPhone();
                 break;
+            case R.id.btn_call_phone_dial:
+                doCallPhoneDial();
+                break;
+
             case R.id.btn_send_message:
 
                 String phonenum = et_num_second.getText().toString().trim();
@@ -106,6 +112,49 @@ public class AndroidBaseFirstActivity extends QkActivity implements View.OnClick
 
     }
 
+    /**
+     * ACTION_DIAL
+     * ACTION_DIAL 拨打一个指定的号码，显示一个带有号码的用户界面，允许用户去启动呼叫
+     * ACTION_CALL 根据指定的数据执行一次呼叫
+     * ACTION_CALL_PRIVILEGED 我只知道是系统专属，是个private API，程序员几乎不用……
+     * （ACTION_CALL在应用中启动一次呼叫有缺陷，多数应用ACTION_DIAL，ACTION_CALL不能用在紧急呼叫上，紧急呼叫可以用ACTION_DIAL来实现）
+     */
+    private void doCallPhoneDial() {
+        String num = et_num_third.getText().toString().trim();
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + num));
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+    /**
+     * ACTION_CALL
+     * ACTION_DIAL 拨打一个指定的号码，显示一个带有号码的用户界面，允许用户去启动呼叫
+     * ACTION_CALL 根据指定的数据执行一次呼叫
+     * ACTION_CALL_PRIVILEGED 我只知道是系统专属，是个private API，程序员几乎不用……
+     * （ACTION_CALL在应用中启动一次呼叫有缺陷，多数应用ACTION_DIAL，ACTION_CALL不能用在紧急呼叫上，紧急呼叫可以用ACTION_DIAL来实现）
+     */
+    private void doCallPhone() {
+
+        /**
+         * 需要打电话的时候再调用这个方法
+         * 6.0动态申请权限第三步
+         */
+        if (PermissionsChecker.checkIsLacksPermission(mContext, Manifest.permission.CALL_PHONE)) {
+            CommonUtil.sendToast(mContext, "请打开拨打电话的权限");
+            return;
+        }
+        String num = et_num.getText().toString().trim();
+        //创建一个Intent
+        Intent intent = new Intent();
+        //设置我们的动作(Action)
+        intent.setAction(Intent.ACTION_CALL);
+        //设置数据URL :http://www.baidu.com
+        Uri data = Uri.parse("tel:" + num);
+        intent.setData(data);//uri
+        //启动Activity
+        startActivity(intent);
+    }
+
 
     /**
      * 1. 访问权限修饰符必须是public
@@ -118,5 +167,32 @@ public class AndroidBaseFirstActivity extends QkActivity implements View.OnClick
         Toast.makeText(this, "第四种方式我被点击了=" + view, Toast.LENGTH_LONG).show();
     }
 
+    /**
+     * 6.0动态申请权限第一步
+     */
+    private void grantPermission() {
+        PermissionUtil.requestPermissions(this,
+                new String[]{
+                        Manifest.permission.CALL_PHONE,
+                });
+    }
 
+    /**
+     * 6.0动态申请权限第二步
+     *
+     * @param requestCode
+     * @param permissions
+     * @param grantResults
+     */
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        for (int i = 0; i < permissions.length; i++) {
+            if (permissions[i] == Manifest.permission.CALL_PHONE) {
+                if (grantResults[i] != 0) {
+                    CommonUtil.sendToast(mContext, "请打开拨打电话的权限");
+                }
+            }
+        }
+    }
 }
