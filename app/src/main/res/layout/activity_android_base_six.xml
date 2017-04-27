@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_new_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="1_创建一个新的Activity" />
+
+    <Button
+        android:id="@+id/btn_ren_pin_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="2_人品计算器" />
+    ]
+
+    <Button
+        android:id="@+id/btn_all_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="3_短信大全" />
+
+    <Button
+        android:id="@+id/btn_send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="4_短信发送器" />
+
+    <Button
+        android:id="@+id/btn_activity_life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="5_activity的生命周期" />
+
+    <Button
+        android:id="@+id/btn_android_transparent_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="6_透明应用" />
+
+    <Button
+        android:id="@+id/btn_activity_start_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="7_Activity的启动模式" />
+
+
+</LinearLayout>

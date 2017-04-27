@@ -65,6 +65,15 @@
         <activity android:name=".activity.MoreThreadActivity" />
         <activity android:name=".activity.FreeMoreThreadActivity" />
 
+        <activity android:name=".activity.AndroidBaseSixActivity" />
+        <activity android:name=".activity.NewActivity" />
+        <activity android:name=".activity.RenPinCalculatorActivity" />
+        <activity android:name=".activity.AllMessageActivity" />
+        <activity android:name=".activity.SendMessageActivity" />
+        <activity android:name=".activity.LifeActivity" />
+        <activity android:name=".activity.TransparentUseActivity" />
+        <activity android:name=".activity.StartMethodActivity" />
+
 
     </application>
 
