@@ -73,8 +73,35 @@
         <activity android:name=".activity.LifeActivity" />
         <activity android:name=".activity.TransparentUseActivity" />
         <activity android:name=".activity.StartMethodActivity" />
+        <activity android:name=".activity.Test2Activity" />
+        <activity android:name=".activity.TestActivity">
+            <intent-filter>
+                <action android:name="com.itheima.testactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="aa/bb"
+                    android:scheme="itheima" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="com.itheima.testactivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:mimeType="aa/bb1"
+                    android:scheme="itheima1" />
+            </intent-filter>
 
 
+        </activity>
+        <activity android:name=".activity.ResultActivity"/>
+        <activity android:name=".activity.ContactActivityThird"/>
+        <activity android:name=".activity.SmsTempleateActivity"/>
+        <activity android:name=".activity.TestActivit"/>
+        <activity android:name=".activity.SecondActivity"/>
     </application>
 
 </manifest>

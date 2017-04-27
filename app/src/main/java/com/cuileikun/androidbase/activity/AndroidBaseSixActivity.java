@@ -38,6 +38,13 @@ public class AndroidBaseSixActivity extends QkActivity implements View.OnClickLi
     public void addListeners() {
         super.addListeners();
         btn_new_activity.setOnClickListener(AndroidBaseSixActivity.this);
+        btn_ren_pin_calculator.setOnClickListener(AndroidBaseSixActivity.this);
+        btn_all_message.setOnClickListener(AndroidBaseSixActivity.this);
+        btn_send_message.setOnClickListener(AndroidBaseSixActivity.this);
+        btn_activity_life.setOnClickListener(AndroidBaseSixActivity.this);
+        btn_android_transparent_use.setOnClickListener(AndroidBaseSixActivity.this);
+        btn_activity_start_method.setOnClickListener(AndroidBaseSixActivity.this);
+
 
     }
 
