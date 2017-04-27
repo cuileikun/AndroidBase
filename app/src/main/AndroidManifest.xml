@@ -58,6 +58,7 @@
         <activity android:name=".activity.NewsActivity" />
         <activity android:name=".activity.SmartImageViewActivity" />
 
+        <activity android:name=".activity.AndroidBaseFivthActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.HttpClientActivity" />
         <activity android:name=".activity.AsyncHttpClientActivity" />
