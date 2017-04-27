@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="1_login案例" />
+
+    <Button
+        android:id="@+id/btn_http_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="2_以httpClient方式进行提交数据" />
+    ]
+
+    <Button
+        android:id="@+id/btn_async_http_client"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="3_asynchttpclient方式提交数据" />
+
+    <Button
+        android:id="@+id/btn_android_more_thread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="4_Android版多线程下载" />
+
+    <Button
+        android:id="@+id/btn_kai_yuan_more_thread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:text="5_开源项目实现多线程下载" />
+
+
+</LinearLayout>

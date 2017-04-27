@@ -15,6 +15,7 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
     private RelativeLayout day_two_rl;
     private RelativeLayout day_three_rl;
     private RelativeLayout day_four_rl;
+    private RelativeLayout day_five_rl;
 
     @Override
     public int getLayoutId() {
@@ -28,12 +29,14 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
         day_two_rl = (RelativeLayout) findViewById(R.id.day_two_rl);
         day_three_rl = (RelativeLayout) findViewById(R.id.day_three_rl);
         day_four_rl = (RelativeLayout) findViewById(R.id.day_four_rl);
+        day_five_rl = (RelativeLayout) findViewById(R.id.day_five_rl);
+
 
     }
 
     @Override
     public void initData() {
-        topbarView.setTopbarTitle("Android基础列表");
+        topbarView.setTopbarTitle(getString(R.string.android_base_list));
     }
 
     @Override
@@ -43,6 +46,8 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
         day_two_rl.setOnClickListener(AndroidBaseActivity.this);
         day_three_rl.setOnClickListener(AndroidBaseActivity.this);
         day_four_rl.setOnClickListener(AndroidBaseActivity.this);
+        day_five_rl.setOnClickListener(AndroidBaseActivity.this);
+
     }
 
     private TopbarImplListener topListener = new TopbarImplListener() {
@@ -66,6 +71,10 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
                 break;
             case R.id.day_four_rl:
                 startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseFouthActivity.class));
+                break;
+
+            case R.id.day_five_rl:
+                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseFivthActivity.class));
                 break;
 
         }
