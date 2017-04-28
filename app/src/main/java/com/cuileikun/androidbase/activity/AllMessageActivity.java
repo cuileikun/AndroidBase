@@ -67,7 +67,7 @@ public class AllMessageActivity extends Activity {
 
                 //[6.1]传递数据
                 intent.putExtra("sms_body", content); //关键问题是name怎么写
-
+//
                 //开启Activity
                 startActivity(intent);
 
