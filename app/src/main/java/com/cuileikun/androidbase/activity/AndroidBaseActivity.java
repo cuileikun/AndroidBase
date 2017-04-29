@@ -19,6 +19,7 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
     private RelativeLayout day_five_rl;
     private RelativeLayout day_six_rl;
     private RelativeLayout day_seven_rl;
+    private RelativeLayout day_eight_rl;
 
     @Override
     public int getLayoutId() {
@@ -35,6 +36,7 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
         day_five_rl = (RelativeLayout) findViewById(R.id.day_five_rl);
         day_six_rl = (RelativeLayout) findViewById(R.id.day_six_rl);
         day_seven_rl = (RelativeLayout) findViewById(R.id.day_seven_rl);
+        day_eight_rl = (RelativeLayout) findViewById(R.id.day_eight_rl);
 
 
     }
@@ -54,6 +56,7 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
         day_five_rl.setOnClickListener(AndroidBaseActivity.this);
         day_six_rl.setOnClickListener(AndroidBaseActivity.this);
         day_seven_rl.setOnClickListener(AndroidBaseActivity.this);
+        day_eight_rl.setOnClickListener(AndroidBaseActivity.this);
 
     }
 
@@ -92,6 +95,9 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
                 startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseSevenActivity.class));
                 break;
 
+            case R.id.day_eight_rl:
+                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseEightActivity.class));
+                break;
         }
 
 

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_base_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="1_服务的入门" />
+
+        <Button
+            android:id="@+id/btn_listen_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="2_电话窃听器" />
+
+
+        <Button
+            android:id="@+id/btn_service_brocast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="3_使用服务注册特殊的广播接收者" />
+
+        <Button
+            android:id="@+id/btn_use_bind_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text=" 4_为什么引入bindService" />
+
+        <Button
+            android:id="@+id/btn_bind_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="5_bindservice方式调用服务里面的方法" />
+
+        <Button
+            android:id="@+id/btn_baidu_musice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="6_百度音乐盒" />
+
+        <Button
+            android:id="@+id/btn_remote_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="7_远程服务" />
+
+        <Button
+            android:id="@+id/btn_local_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="8_本地服务" />
+
+
+        <Button
+            android:id="@+id/btn_zhifubao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="9_支付宝" />
+
+    </LinearLayout>
+
+
+</ScrollView>
