@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_fragment_zero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="1_Fragment入门" />
+
+        <Button
+            android:id="@+id/btn_instead_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="2_动态替换Fragment" />
+
+
+        <Button
+            android:id="@+id/btn_weixin_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="3_模拟微信主界面" />
+
+        <Button
+            android:id="@+id/btn_fragment_low_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text=" 4_Fragment兼容低版本写法" />
+
+        <Button
+            android:id="@+id/btn_fragment_life"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="5_Fragment的生命周期" />
+
+        <Button
+            android:id="@+id/btn_fragment_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="6_Fragment之间通信" />
+
+        <Button
+            android:id="@+id/btn_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="7_menu菜单" />
+
+        <Button
+            android:id="@+id/btn_auto_complete_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="8_autocompletetextView控件的使用" />
+
+
+        <Button
+            android:id="@+id/btn_view_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="9_viewanim" />
+
+        <Button
+            android:id="@+id/btn_xml_tweened_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="10_使用xml的方式定义补间动画" />
+
+        <Button
+            android:id="@+id/btn_notication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="11_通知" />
+        <Button
+            android:id="@+id/btn_backup_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="12_短信的备份" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
