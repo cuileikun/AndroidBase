@@ -151,8 +151,21 @@
         <activity android:name=".activity.nine.CustomContentObserverActivity" />
         <activity android:name=".activity.nine.ListenTheMessageActivity" />
 
-
         <activity android:name=".activity.AndroidBaseTenActivity" />
+        <activity android:name=".activity.ten.LoadBigImageActivity"/>
+        <activity android:name=".activity.ten.CreateOriginImageBackupActivity"/>
+        <activity android:name=".activity.ten.DealImageActivity"/>
+        <activity android:name=".activity.ten.PaintActivity"/>
+        <activity android:name=".activity.ten.TearClothesActivity"/>
+        <activity android:name=".activity.ten.PlayAudioActivity"/>
+        <activity android:name=".activity.ten.BaiduMusicActivity"/>
+        <activity android:name=".activity.ten.PlayNetSongActivity"/>
+        <activity android:name=".activity.ten.PlayAviActivity"/>
+        <activity android:name=".activity.ten.UseVideoViewActivity"/>
+        <activity android:name=".activity.ten.TakePhotoAviActivity"/>
+
+
+
         <activity android:name=".activity.AndroidBaseElevenActivity" />
 
 

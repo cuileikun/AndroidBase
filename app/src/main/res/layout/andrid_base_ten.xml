@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_load_big_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="1_加载大图片" />
+
+        <Button
+            android:id="@+id/btn_create_origin_image_backup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="2_创建原图的副本" />
+
+
+        <Button
+            android:id="@+id/btn_deal_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="3_对图像进行处理" />
+
+        <Button
+            android:id="@+id/btn_paint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text=" 4_画画板" />
+
+        <Button
+            android:id="@+id/btn_tear_clothes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="5_撕衣服小案例" />
+
+        <Button
+            android:id="@+id/btn_play_audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="6_播放音频" />
+
+        <Button
+            android:id="@+id/btn_baidu_music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="7_百度音乐盒" />
+
+        <Button
+            android:id="@+id/btn_play_net_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="8_播放网络歌曲" />
+
+
+        <Button
+            android:id="@+id/btn_play_avi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="9_播放视频" />
+
+        <Button
+            android:id="@+id/btn_use_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="10_videoView的使用" />
+
+        <Button
+            android:id="@+id/btn_take_photo_avi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="11_照相和录像" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
