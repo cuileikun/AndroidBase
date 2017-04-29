@@ -1,11 +1,9 @@
 package com.cuileikun.androidbase.activity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 import com.cuileikun.androidbase.R;
 import com.cuileikun.androidbase.activity.eight.BaiduMusiceActivity;
 import com.cuileikun.androidbase.activity.eight.BaseServiceActivity;
