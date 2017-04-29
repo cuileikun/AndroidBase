@@ -15,4 +15,9 @@ public class PhoneRestartActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone_restart);
     }
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+    }
+
 }

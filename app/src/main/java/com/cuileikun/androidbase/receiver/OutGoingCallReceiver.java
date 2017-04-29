@@ -1,4 +1,4 @@
-package com.cuileikun.androidbase.brocastreceiver;
+package com.cuileikun.androidbase.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

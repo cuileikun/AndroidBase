@@ -9,6 +9,7 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
     <!-- 短信验证需要的权限stop -->
     <!-- 发送短信需要的权限 -->
@@ -126,7 +127,7 @@
         <activity android:name=".activity.seventh.FrameAnimationActivity" />
 
         <!--配置广播接收者  -->
-        <receiver android:name=".brocastreceiver.OutGoingCallReceiver">
+        <receiver android:name=".receiver.OutGoingCallReceiver">
             <intent-filter>
                 <!--调到了一个合适的频道  -->
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
@@ -134,7 +135,62 @@
             </intent-filter>
 
         </receiver>
+        <receiver android:name=".receiver.SdcardReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
 
+                <data android:scheme="file" />
+
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.SmsReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.AppStateReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.BootReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.ReceiveCustomReceiver">
+            <intent-filter >
+                <action android:name="com.itheima.custom"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.ProvienceReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.itheima.rice" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.CityReceiver" >
+            <intent-filter android:priority="500" >
+                <action android:name="com.itheima.rice" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.CountryReceiver" >
+            <intent-filter android:priority="100" >
+                <action android:name="com.itheima.rice" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.NongMinReceiver" >
+            <intent-filter android:priority="-100" >
+                <action android:name="com.itheima.rice" />
+            </intent-filter>
+        </receiver>
 
     </application>
 
