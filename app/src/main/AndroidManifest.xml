@@ -32,49 +32,49 @@
 
         <!--<activity android:name=".activity.AndroidBaseActivity" />-->
 
-        <activity android:name=".activity.AndroidBaseFirstActivity" />
+        <activity android:name=".activity.first.AndroidBaseFirstActivity" />
 
         <activity android:name=".activity.AndroidBaseSecondActivity" />
-        <activity android:name=".activity.DoXmlActivity" />
-        <activity android:name=".activity.UserLoginDataActivity" />
-        <activity android:name=".activity.FilePermissionActivity" />
-        <activity android:name=".activity.UserLoginSdcardActivity" />
-        <activity android:name=".activity.GetSdcardSizeActivity" />
-        <activity android:name=".activity.UserLoginSpActivity" />
-        <activity android:name=".activity.LogActivity" />
+        <activity android:name=".activity.second.DoXmlActivity" />
+        <activity android:name=".activity.second.UserLoginDataActivity" />
+        <activity android:name=".activity.second.FilePermissionActivity" />
+        <activity android:name=".activity.second.UserLoginSdcardActivity" />
+        <activity android:name=".activity.second.GetSdcardSizeActivity" />
+        <activity android:name=".activity.second.UserLoginSpActivity" />
+        <activity android:name=".activity.second.LogActivity" />
 
         <activity android:name=".activity.AndroidBaseThirdActivity" />
-        <activity android:name=".activity.SqliteActivity" />
-        <activity android:name=".activity.ListviewActivity" />
-        <activity android:name=".activity.ContactActivity" />
-        <activity android:name=".activity.ArrayAdapterActivity" />
+        <activity android:name=".activity.third.SqliteActivity" />
+        <activity android:name=".activity.third.ListviewActivity" />
+        <activity android:name=".activity.third.ContactActivity" />
+        <activity android:name=".activity.third.ArrayAdapterActivity" />
 
         <activity android:name=".activity.AndroidBaseFouthActivity" />
-        <activity android:name=".activity.YuanMaActivity" />
-        <activity android:name=".activity.AnrActivity" />
-        <activity android:name=".activity.LookPictureActivity" />
-        <activity android:name=".activity.ModifyLookPictureActivity" />
-        <activity android:name=".activity.HandlerActivity" />
-        <activity android:name=".activity.NewsActivity" />
-        <activity android:name=".activity.SmartImageViewActivity" />
+        <activity android:name=".activity.fouth.YuanMaActivity" />
+        <activity android:name=".activity.fouth.AnrActivity" />
+        <activity android:name=".activity.fouth.LookPictureActivity" />
+        <activity android:name=".activity.fouth.ModifyLookPictureActivity" />
+        <activity android:name=".activity.fouth.HandlerActivity" />
+        <activity android:name=".activity.fouth.NewsActivity" />
+        <activity android:name=".activity.fouth.SmartImageViewActivity" />
 
         <activity android:name=".activity.AndroidBaseFivthActivity" />
-        <activity android:name=".activity.LoginActivity" />
-        <activity android:name=".activity.HttpClientActivity" />
-        <activity android:name=".activity.AsyncHttpClientActivity" />
-        <activity android:name=".activity.MoreThreadActivity" />
-        <activity android:name=".activity.FreeMoreThreadActivity" />
+        <activity android:name=".activity.fifth.LoginActivity" />
+        <activity android:name=".activity.fifth.HttpClientActivity" />
+        <activity android:name=".activity.fifth.AsyncHttpClientActivity" />
+        <activity android:name=".activity.fifth.MoreThreadActivity" />
+        <activity android:name=".activity.fifth.FreeMoreThreadActivity" />
 
         <activity android:name=".activity.AndroidBaseSixActivity" />
-        <activity android:name=".activity.NewActivity" />
-        <activity android:name=".activity.RenPinCalculatorActivity" />
-        <activity android:name=".activity.AllMessageActivity" />
-        <activity android:name=".activity.SendMessageActivity" />
-        <activity android:name=".activity.LifeActivity" />
-        <activity android:name=".activity.TransparentUseActivity" />
-        <activity android:name=".activity.StartMethodActivity" />
-        <activity android:name=".activity.Test2Activity" />
-        <activity android:name=".activity.TestActivity">
+        <activity android:name=".activity.sixth.NewActivity" />
+        <activity android:name=".activity.sixth.RenPinCalculatorActivity" />
+        <activity android:name=".activity.sixth.AllMessageActivity" />
+        <activity android:name=".activity.sixth.SendMessageActivity" />
+        <activity android:name=".activity.sixth.LifeActivity" />
+        <activity android:name=".activity.sixth.TransparentUseActivity" />
+        <activity android:name=".activity.sixth.StartMethodActivity" />
+        <activity android:name=".activity.sixth.Test2Activity" />
+        <activity android:name=".activity.sixth.TestActivity">
             <intent-filter>
                 <action android:name="com.itheima.testactivity" />
 
@@ -97,15 +97,15 @@
 
 
         </activity>
-        <activity android:name=".activity.ResultActivity" />
-        <activity android:name=".activity.ContactActivityThird" />
-        <activity android:name=".activity.SmsTempleateActivity" />
-        <activity android:name=".activity.TestActivit" />
+        <activity android:name=".activity.sixth.ResultActivity" />
+        <activity android:name=".activity.sixth.ContactActivityThird" />
+        <activity android:name=".activity.sixth.SmsTempleateActivity" />
+        <activity android:name=".activity.sixth.TestActivit" />
         <activity
-            android:name=".activity.SecondActivity"
+            android:name=".activity.sixth.SecondActivity"
             android:launchMode="singleInstance" />
         <!-- plugin findViewByMe-->
-        <activity android:name=".activity.TestFindViewByMe"/>
+        <activity android:name=".activity.test.TestFindViewByMe"/>
     </application>
 
 </manifest>

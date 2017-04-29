@@ -5,6 +5,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.cuileikun.androidbase.R;
+import com.cuileikun.androidbase.activity.fouth.AnrActivity;
+import com.cuileikun.androidbase.activity.fouth.HandlerActivity;
+import com.cuileikun.androidbase.activity.fouth.LookPictureActivity;
+import com.cuileikun.androidbase.activity.fouth.ModifyLookPictureActivity;
+import com.cuileikun.androidbase.activity.fouth.NewsActivity;
+import com.cuileikun.androidbase.activity.fouth.SmartImageViewActivity;
+import com.cuileikun.androidbase.activity.fouth.YuanMaActivity;
 import com.qk.applibrary.activity.QkActivity;
 
 /**

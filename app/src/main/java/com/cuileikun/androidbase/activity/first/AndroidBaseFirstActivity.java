@@ -1,4 +1,4 @@
-package com.cuileikun.androidbase.activity;
+package com.cuileikun.androidbase.activity.first;
 
 import android.Manifest;
 import android.content.Context;

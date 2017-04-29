@@ -1,4 +1,4 @@
-package com.cuileikun.androidbase.activity;
+package com.cuileikun.androidbase.activity.third;
 
 import android.app.Activity;
 import android.content.ContentValues;

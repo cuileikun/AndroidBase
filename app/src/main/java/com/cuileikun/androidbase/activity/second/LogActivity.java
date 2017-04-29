@@ -1,4 +1,4 @@
-package com.cuileikun.androidbase.activity;
+package com.cuileikun.androidbase.activity.second;
 
 import android.util.Log;
 import android.view.View;

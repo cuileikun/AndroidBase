@@ -1,4 +1,4 @@
-package com.cuileikun.androidbase.activity;
+package com.cuileikun.androidbase.activity.third;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
