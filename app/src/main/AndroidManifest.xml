@@ -15,6 +15,7 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
 
     <application
         android:allowBackup="true"
@@ -75,6 +76,7 @@
         <activity android:name=".activity.sixth.StartMethodActivity" />
         <activity android:name=".activity.sixth.Test2Activity" />
         <activity android:name=".activity.sixth.TestActivity">
+
             <intent-filter>
                 <action android:name="com.itheima.testactivity" />
 
@@ -105,7 +107,35 @@
             android:name=".activity.sixth.SecondActivity"
             android:launchMode="singleInstance" />
         <!-- plugin findViewByMe-->
-        <activity android:name=".activity.test.TestFindViewByMe"/>
+        <activity android:name=".activity.test.TestFindViewByMe" />
+
+        <activity android:name=".activity.AndroidBaseSevenActivity" />
+        <activity android:name=".activity.seventh.IpDialerActivity" />
+        <activity android:name=".activity.seventh.ListenSdcardStateActivity" />
+        <activity android:name=".activity.seventh.PowerSavingAssistantActivity" />
+        <activity android:name=".activity.seventh.UninstallInstallActivity" />
+        <activity android:name=".activity.seventh.PhoneRestartActivity" />
+        <activity android:name=".activity.seventh.SendUnorderedBroadcastActivity" />
+        <activity android:name=".activity.seventh.ReceiveUnorderedBroadcastActivity" />
+        <activity android:name=".activity.seventh.XidadaFenRiceEightActivity" />
+        <activity android:name=".activity.seventh.XidadaFenRiceActivity" />
+        <activity android:name=".activity.seventh.SpecalBroadcasterActivity" />
+        <activity android:name=".activity.seventh.ThemeStyleActivity" />
+        <activity android:name=".activity.seventh.GlobalizationActivity" />
+        <activity android:name=".activity.seventh.DialogActivity" />
+        <activity android:name=".activity.seventh.FrameAnimationActivity" />
+
+        <!--配置广播接收者  -->
+        <receiver android:name=".brocastreceiver.OutGoingCallReceiver">
+            <intent-filter>
+                <!--调到了一个合适的频道  -->
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+
+            </intent-filter>
+
+        </receiver>
+
+
     </application>
 
 </manifest>

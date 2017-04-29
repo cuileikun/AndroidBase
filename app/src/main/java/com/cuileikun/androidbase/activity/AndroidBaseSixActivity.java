@@ -5,6 +5,13 @@ import android.view.View;
 import android.widget.Button;
 
 import com.cuileikun.androidbase.R;
+import com.cuileikun.androidbase.activity.sixth.AllMessageActivity;
+import com.cuileikun.androidbase.activity.sixth.LifeActivity;
+import com.cuileikun.androidbase.activity.sixth.NewActivity;
+import com.cuileikun.androidbase.activity.sixth.RenPinCalculatorActivity;
+import com.cuileikun.androidbase.activity.sixth.SendMessageActivity;
+import com.cuileikun.androidbase.activity.sixth.StartMethodActivity;
+import com.cuileikun.androidbase.activity.sixth.TransparentUseActivity;
 import com.qk.applibrary.activity.QkActivity;
 
 /**

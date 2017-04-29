@@ -6,7 +6,6 @@ import android.widget.RelativeLayout;
 
 import com.cuileikun.androidbase.R;
 import com.cuileikun.androidbase.activity.first.AndroidBaseFirstActivity;
-import com.cuileikun.androidbase.activity.seven.AndroidBaseSevenActivity;
 import com.qk.applibrary.activity.QkActivity;
 import com.qk.applibrary.listener.TopbarImplListener;
 import com.qk.applibrary.widget.TopbarView;

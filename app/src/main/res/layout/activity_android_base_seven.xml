@@ -1,6 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_ip_dialer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="1_ip拨号器" />
+
+        <Button
+            android:id="@+id/btn_listen_sdcard_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="2_sd卡状态的监听" />
+
+
+        <Button
+            android:id="@+id/btn_power_saving_assistant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="3_省电助手" />
+
+        <Button
+            android:id="@+id/btn_uninstall_install"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text=" 4_卸载安装" />
+
+        <Button
+            android:id="@+id/btn_phone_restart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="5_手机重启案例" />
+
+        <Button
+            android:id="@+id/btn_send_unordered_broadcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="6_发送无序广播" />
+
+        <Button
+            android:id="@+id/btn_receive_unordered_broadcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="7_接收无序广播" />
+
+        <Button
+            android:id="@+id/btn_xidada_fen_rice_eight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="8_习大大发大米" />
+
+
+        <Button
+            android:id="@+id/btn_xidada_fen_rice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="9_接收习大大发的大米" />
+        ]
+
+        <Button
+            android:id="@+id/btn_specal_broadcast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="10_特殊的广播接收者" />
+
+        <Button
+            android:id="@+id/btn_theme_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="11_样式和主题" />
+
+        <Button
+            android:id="@+id/btn_globalization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="12_国际化" />
+
+        <Button
+            android:id="@+id/btn_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="13_Android中对话框" />
+
+        <Button
+            android:id="@+id/btn_frame_animation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="14_帧动画" />
+    </LinearLayout>
+
+
+</ScrollView>
