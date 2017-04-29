@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_create_private_db"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="1_创建私有的数据库" />
+
+        <Button
+            android:id="@+id/btn_read_the_first_appcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="2_读取第一个应用数据的内容" />
+
+
+        <Button
+            android:id="@+id/btn_message_backup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="3_短信的备份" />
+
+        <Button
+            android:id="@+id/btn_search_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text=" 4_查询联系人" />
+
+        <Button
+            android:id="@+id/btn_use_neirong_jiexi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="5_使用内容解析者往联系人数据插入联系人" />
+
+        <Button
+            android:id="@+id/btn_custom_content_observer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="6_定义内容的观察者" />
+
+        <Button
+            android:id="@+id/btn_listen_the_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:text="7_短信的监听" />
+
+    </LinearLayout>
+
+
+</ScrollView>

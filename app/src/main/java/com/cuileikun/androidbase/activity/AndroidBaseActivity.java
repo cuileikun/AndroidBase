@@ -20,6 +20,9 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
     private RelativeLayout day_six_rl;
     private RelativeLayout day_seven_rl;
     private RelativeLayout day_eight_rl;
+    private RelativeLayout day_nine_rl;
+    private RelativeLayout day_ten_rl;
+    private RelativeLayout day_eleven_rl;
 
     @Override
     public int getLayoutId() {
@@ -37,6 +40,9 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
         day_six_rl = (RelativeLayout) findViewById(R.id.day_six_rl);
         day_seven_rl = (RelativeLayout) findViewById(R.id.day_seven_rl);
         day_eight_rl = (RelativeLayout) findViewById(R.id.day_eight_rl);
+        day_nine_rl = (RelativeLayout) findViewById(R.id.day_nine_rl);
+        day_ten_rl = (RelativeLayout) findViewById(R.id.day_ten_rl);
+        day_eleven_rl = (RelativeLayout) findViewById(R.id.day_eleven_rl);
 
 
     }
@@ -57,6 +63,9 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
         day_six_rl.setOnClickListener(AndroidBaseActivity.this);
         day_seven_rl.setOnClickListener(AndroidBaseActivity.this);
         day_eight_rl.setOnClickListener(AndroidBaseActivity.this);
+        day_nine_rl.setOnClickListener(AndroidBaseActivity.this);
+        day_ten_rl.setOnClickListener(AndroidBaseActivity.this);
+        day_eleven_rl.setOnClickListener(AndroidBaseActivity.this);
 
     }
 
@@ -98,6 +107,20 @@ public class AndroidBaseActivity extends QkActivity implements View.OnClickListe
             case R.id.day_eight_rl:
                 startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseEightActivity.class));
                 break;
+
+
+            case R.id.day_nine_rl:
+                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseNineActivity.class));
+                break;
+
+            case R.id.day_ten_rl:
+                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseTenActivity.class));
+                break;
+
+            case R.id.day_eleven_rl:
+                startActivity(new Intent(AndroidBaseActivity.this, AndroidBaseElevenActivity.class));
+                break;
+
         }
 
 

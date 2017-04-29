@@ -141,6 +141,19 @@
         <activity android:name=".activity.eight.RemoteServiceActivity" />"
         <activity android:name=".activity.eight.LocalServiceActivity" />"
         <activity android:name=".activity.eight.ZhifubaoActivity" />"
+        <activity android:name=".activity.AndroidBaseNineActivity" />
+
+        <activity android:name=".activity.nine.CreatePrivateDbActivity" />
+        <activity android:name=".activity.nine.ReadTheFirstAppcontentActivity" />
+        <activity android:name=".activity.nine.MessageBackupActivity" />
+        <activity android:name=".activity.nine.SearchContactActivity" />
+        <activity android:name=".activity.nine.UseNeirongJiexiActivity" />
+        <activity android:name=".activity.nine.CustomContentObserverActivity" />
+        <activity android:name=".activity.nine.ListenTheMessageActivity" />
+
+
+        <activity android:name=".activity.AndroidBaseTenActivity" />
+        <activity android:name=".activity.AndroidBaseElevenActivity" />
 
 
         <!--配置广播接收者  -->
@@ -210,20 +223,21 @@
             </intent-filter>
         </receiver>
 
-        <!--配置Service   -->
-        <service android:name=".service.DemoService" />
-
         <receiver android:name=".receiver.BootReceiverSecond">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
+
+        <!--配置Service   -->
+        <service android:name=".service.DemoService" />
         <service android:name=".service.PhoneService" />
-        <service android:name=".service.ScreenService"/>
-        <service android:name=".service.TestService"/>
-        <service android:name=".service.BanZhengService"/>
-        <service android:name=".service.MusicService"/>
+        <service android:name=".service.ScreenService" />
+        <service android:name=".service.TestService" />
+        <service android:name=".service.BanZhengService" />
+        <service android:name=".service.MusicService" />
+
     </application>
 
 </manifest>
