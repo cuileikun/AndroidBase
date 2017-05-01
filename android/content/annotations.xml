@@ -1,0 +1,5 @@
+<root>
+  <item name='android.content.Intent FLAG_ACTIVITY_NEW_TASK'>
+    <annotation name='java.lang.annotation.Deprecated' />
+  </item>
+</root>

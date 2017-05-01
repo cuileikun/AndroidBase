@@ -6,7 +6,6 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.WindowManager;
-
 import com.cuileikun.androidbase.R;
 import com.cuileikun.androidbase.fragment.Fragment3;
 
