@@ -21,7 +21,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
+    <!-- 读取联系人权限 add by clk on -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -152,31 +154,31 @@
         <activity android:name=".activity.nine.ListenTheMessageActivity" />
 
         <activity android:name=".activity.AndroidBaseTenActivity" />
-        <activity android:name=".activity.ten.LoadBigImageActivity"/>
-        <activity android:name=".activity.ten.CreateOriginImageBackupActivity"/>
-        <activity android:name=".activity.ten.DealImageActivity"/>
-        <activity android:name=".activity.ten.PaintActivity"/>
-        <activity android:name=".activity.ten.TearClothesActivity"/>
-        <activity android:name=".activity.ten.PlayAudioActivity"/>
-        <activity android:name=".activity.ten.BaiduMusicActivity"/>
-        <activity android:name=".activity.ten.PlayNetSongActivity"/>
-        <activity android:name=".activity.ten.PlayAviActivity"/>
-        <activity android:name=".activity.ten.UseVideoViewActivity"/>
-        <activity android:name=".activity.ten.TakePhotoAviActivity"/>
+        <activity android:name=".activity.ten.LoadBigImageActivity" />
+        <activity android:name=".activity.ten.CreateOriginImageBackupActivity" />
+        <activity android:name=".activity.ten.DealImageActivity" />
+        <activity android:name=".activity.ten.PaintActivity" />
+        <activity android:name=".activity.ten.TearClothesActivity" />
+        <activity android:name=".activity.ten.PlayAudioActivity" />
+        <activity android:name=".activity.ten.BaiduMusicActivity" />
+        <activity android:name=".activity.ten.PlayNetSongActivity" />
+        <activity android:name=".activity.ten.PlayAviActivity" />
+        <activity android:name=".activity.ten.UseVideoViewActivity" />
+        <activity android:name=".activity.ten.TakePhotoAviActivity" />
 
         <activity android:name=".activity.AndroidBaseElevenActivity" />
-        <activity android:name=".activity.eleven.FragmentZeroActivity"/>
-        <activity android:name=".activity.eleven.InsteadFragmentActivity"/>
-        <activity android:name=".activity.eleven.WeixinMainContentActivity"/>
-        <activity android:name=".activity.eleven.FragmentLowVersionActivity"/>
-        <activity android:name=".activity.eleven.FragmentLifeActivity"/>
-        <activity android:name=".activity.eleven.FragmentContactActivity"/>
-        <activity android:name=".activity.eleven.MenuActivity"/>
-        <activity android:name=".activity.eleven.AutoCompleteTextViewActivity"/>
-        <activity android:name=".activity.eleven.ViewAnimActivity"/>
-        <activity android:name=".activity.eleven.XmlTweenedAnimationActivity"/>
-        <activity android:name=".activity.eleven.NoticationActivity"/>
-        <activity android:name=".activity.eleven.BackupMessageActivity"/>
+        <activity android:name=".activity.eleven.FragmentZeroActivity" />
+        <activity android:name=".activity.eleven.InsteadFragmentActivity" />
+        <activity android:name=".activity.eleven.WeixinMainContentActivity" />
+        <activity android:name=".activity.eleven.FragmentLowVersionActivity" />
+        <activity android:name=".activity.eleven.FragmentLifeActivity" />
+        <activity android:name=".activity.eleven.FragmentContactActivity" />
+        <activity android:name=".activity.eleven.MenuActivity" />
+        <activity android:name=".activity.eleven.AutoCompleteTextViewActivity" />
+        <activity android:name=".activity.eleven.ViewAnimActivity" />
+        <activity android:name=".activity.eleven.XmlTweenedAnimationActivity" />
+        <activity android:name=".activity.eleven.NoticationActivity" />
+        <activity android:name=".activity.eleven.BackupMessageActivity" />
 
 
         <!--配置广播接收者  -->
@@ -261,6 +263,10 @@
         <service android:name=".service.BanZhengService" />
         <service android:name=".service.MusicService" />
 
+        <!--配置provider   -->
+        <provider
+            android:name=".provider.AccountProvider"
+            android:authorities="com.itheima.provider"></provider>
     </application>
 
 </manifest>
