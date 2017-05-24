@@ -22,9 +22,8 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <!-- 读取联系人权限 add by clk on -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
-
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -32,18 +31,15 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.AndroidBaseActivity">
+        <activity android:name=".activity.BaseActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!--<activity android:name=".activity.AndroidBaseActivity" />-->
-
+        <activity android:name=".activity.AndroidBaseActivity" />
         <activity android:name=".activity.first.AndroidBaseFirstActivity" />
-
         <activity android:name=".activity.AndroidBaseSecondActivity" />
         <activity android:name=".activity.second.DoXmlActivity" />
         <activity android:name=".activity.second.UserLoginDataActivity" />
@@ -52,13 +48,11 @@
         <activity android:name=".activity.second.GetSdcardSizeActivity" />
         <activity android:name=".activity.second.UserLoginSpActivity" />
         <activity android:name=".activity.second.LogActivity" />
-
         <activity android:name=".activity.AndroidBaseThirdActivity" />
         <activity android:name=".activity.third.SqliteActivity" />
         <activity android:name=".activity.third.ListviewActivity" />
         <activity android:name=".activity.third.ContactActivity" />
         <activity android:name=".activity.third.ArrayAdapterActivity" />
-
         <activity android:name=".activity.AndroidBaseFouthActivity" />
         <activity android:name=".activity.fouth.YuanMaActivity" />
         <activity android:name=".activity.fouth.AnrActivity" />
@@ -67,14 +61,12 @@
         <activity android:name=".activity.fouth.HandlerActivity" />
         <activity android:name=".activity.fouth.NewsActivity" />
         <activity android:name=".activity.fouth.SmartImageViewActivity" />
-
         <activity android:name=".activity.AndroidBaseFivthActivity" />
         <activity android:name=".activity.fifth.LoginActivity" />
         <activity android:name=".activity.fifth.HttpClientActivity" />
         <activity android:name=".activity.fifth.AsyncHttpClientActivity" />
         <activity android:name=".activity.fifth.MoreThreadActivity" />
         <activity android:name=".activity.fifth.FreeMoreThreadActivity" />
-
         <activity android:name=".activity.AndroidBaseSixActivity" />
         <activity android:name=".activity.sixth.NewActivity" />
         <activity android:name=".activity.sixth.RenPinCalculatorActivity" />
@@ -85,7 +77,6 @@
         <activity android:name=".activity.sixth.StartMethodActivity" />
         <activity android:name=".activity.sixth.Test2Activity" />
         <activity android:name=".activity.sixth.TestActivity">
-
             <intent-filter>
                 <action android:name="com.itheima.testactivity" />
 
@@ -95,7 +86,6 @@
                     android:mimeType="aa/bb"
                     android:scheme="itheima" />
             </intent-filter>
-
             <intent-filter>
                 <action android:name="com.itheima.testactivity" />
 
@@ -105,8 +95,6 @@
                     android:mimeType="aa/bb1"
                     android:scheme="itheima1" />
             </intent-filter>
-
-
         </activity>
         <activity android:name=".activity.sixth.ResultActivity" />
         <activity android:name=".activity.sixth.ContactActivityThird" />
@@ -115,9 +103,8 @@
         <activity
             android:name=".activity.sixth.SecondActivity"
             android:launchMode="singleInstance" />
-        <!-- plugin findViewByMe-->
+        <!-- plugin findViewByMe -->
         <activity android:name=".activity.test.TestFindViewByMe" />
-
         <activity android:name=".activity.AndroidBaseSevenActivity" />
         <activity android:name=".activity.seventh.IpDialerActivity" />
         <activity android:name=".activity.seventh.ListenSdcardStateActivity" />
@@ -133,19 +120,26 @@
         <activity android:name=".activity.seventh.GlobalizationActivity" />
         <activity android:name=".activity.seventh.DialogActivity" />
         <activity android:name=".activity.seventh.FrameAnimationActivity" />
-
         <activity android:name=".activity.AndroidBaseEightActivity" />
-        <activity android:name=".activity.eight.BaseServiceActivity" />"
-        <activity android:name=".activity.eight.ListenCallActivity" />"
-        <activity android:name=".activity.eight.ServiceBrocastActivity" />"
-        <activity android:name=".activity.eight.UseBindServiceActivity" />"
-        <activity android:name=".activity.eight.BindServiceActivity" />"
-        <activity android:name=".activity.eight.BaiduMusiceActivity" />"
-        <activity android:name=".activity.eight.RemoteServiceActivity" />"
-        <activity android:name=".activity.eight.LocalServiceActivity" />"
-        <activity android:name=".activity.eight.ZhifubaoActivity" />"
+        <activity android:name=".activity.eight.BaseServiceActivity" />
+        "
+        <activity android:name=".activity.eight.ListenCallActivity" />
+        "
+        <activity android:name=".activity.eight.ServiceBrocastActivity" />
+        "
+        <activity android:name=".activity.eight.UseBindServiceActivity" />
+        "
+        <activity android:name=".activity.eight.BindServiceActivity" />
+        "
+        <activity android:name=".activity.eight.BaiduMusiceActivity" />
+        "
+        <activity android:name=".activity.eight.RemoteServiceActivity" />
+        "
+        <activity android:name=".activity.eight.LocalServiceActivity" />
+        "
+        <activity android:name=".activity.eight.ZhifubaoActivity" />
+        "
         <activity android:name=".activity.AndroidBaseNineActivity" />
-
         <activity android:name=".activity.nine.CreatePrivateDbActivity" />
         <activity android:name=".activity.nine.ReadTheFirstAppcontentActivity" />
         <activity android:name=".activity.nine.MessageBackupActivity" />
@@ -153,7 +147,6 @@
         <activity android:name=".activity.nine.UseNeirongJiexiActivity" />
         <activity android:name=".activity.nine.CustomContentObserverActivity" />
         <activity android:name=".activity.nine.ListenTheMessageActivity" />
-
         <activity android:name=".activity.AndroidBaseTenActivity" />
         <activity android:name=".activity.ten.LoadBigImageActivity" />
         <activity android:name=".activity.ten.CreateOriginImageBackupActivity" />
@@ -166,7 +159,6 @@
         <activity android:name=".activity.ten.PlayAviActivity" />
         <activity android:name=".activity.ten.UseVideoViewActivity" />
         <activity android:name=".activity.ten.TakePhotoAviActivity" />
-
         <activity android:name=".activity.AndroidBaseElevenActivity" />
         <activity android:name=".activity.eleven.FragmentZeroActivity" />
         <activity android:name=".activity.eleven.InsteadFragmentActivity" />
@@ -181,15 +173,13 @@
         <activity android:name=".activity.eleven.NoticationActivity" />
         <activity android:name=".activity.eleven.BackupMessageActivity" />
 
-
-        <!--配置广播接收者  -->
+        <!-- 配置广播接收者 -->
         <receiver android:name=".receiver.OutGoingCallReceiver">
             <intent-filter>
-                <!--调到了一个合适的频道  -->
+
+                <!-- 调到了一个合适的频道 -->
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
-
             </intent-filter>
-
         </receiver>
         <receiver android:name=".receiver.SdcardReceiver">
             <intent-filter>
@@ -197,7 +187,6 @@
                 <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
 
                 <data android:scheme="file" />
-
             </intent-filter>
         </receiver>
         <receiver android:name=".receiver.SmsReceiver">
@@ -205,14 +194,12 @@
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
-
         <receiver android:name=".receiver.AppStateReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_ADDED" />
                 <action android:name="android.intent.action.PACKAGE_REMOVED" />
 
                 <data android:scheme="package" />
-
             </intent-filter>
         </receiver>
         <receiver android:name=".receiver.BootReceiver">
@@ -230,45 +217,70 @@
                 <action android:name="com.itheima.rice" />
             </intent-filter>
         </receiver>
-
         <receiver android:name=".receiver.CityReceiver">
             <intent-filter android:priority="500">
                 <action android:name="com.itheima.rice" />
             </intent-filter>
         </receiver>
-
         <receiver android:name=".receiver.CountryReceiver">
             <intent-filter android:priority="100">
                 <action android:name="com.itheima.rice" />
             </intent-filter>
         </receiver>
-
         <receiver android:name=".receiver.NongMinReceiver">
             <intent-filter android:priority="-100">
                 <action android:name="com.itheima.rice" />
             </intent-filter>
         </receiver>
-
         <receiver android:name=".receiver.BootReceiverSecond">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-
-        <!--配置Service   -->
+        <!-- 配置Service -->
         <service android:name=".service.DemoService" />
         <service android:name=".service.PhoneService" />
         <service android:name=".service.ScreenService" />
         <service android:name=".service.TestService" />
         <service android:name=".service.BanZhengService" />
         <service android:name=".service.MusicService" />
-        <service android:name=".service.MMusicService"/>
+        <service android:name=".service.MMusicService" />
 
-        <!--配置provider   -->
+        <!-- 配置provider -->
         <provider
             android:name=".provider.AccountProvider"
-            android:authorities="com.itheima.provider"></provider>
+            android:authorities="com.itheima.provider" />
+
+        <activity android:name=".activity.JavaBaseActivity" />
+        <activity android:name=".javaactivity.Java1Activity" />
+        <activity android:name=".javaactivity.Java2Activity" />
+        <activity android:name=".javaactivity.Java3Activity" />
+        <activity android:name=".javaactivity.Java4Activity" />
+        <activity android:name=".javaactivity.Java5Activity" />
+        <activity android:name=".javaactivity.Java6Activity" />
+        <activity android:name=".javaactivity.Java7Activity" />
+        <activity android:name=".javaactivity.Java8Activity" />
+        <activity android:name=".javaactivity.Java9Activity" />
+        <activity android:name=".javaactivity.Java10Activity" />
+        <activity android:name=".javaactivity.Java11Activity" />
+        <activity android:name=".javaactivity.Java12Activity" />
+        <activity android:name=".javaactivity.Java13Activity" />
+        <activity android:name=".javaactivity.Java14Activity" />
+        <activity android:name=".javaactivity.Java15Activity" />
+        <activity android:name=".javaactivity.Java16Activity" />
+        <activity android:name=".javaactivity.Java17Activity" />
+        <activity android:name=".javaactivity.Java18Activity" />
+        <activity android:name=".javaactivity.Java19Activity" />
+        <activity android:name=".javaactivity.Java20Activity" />
+        <activity android:name=".javaactivity.Java21Activity" />
+        <activity android:name=".javaactivity.Java22Activity" />
+        <activity android:name=".javaactivity.Java23Activity" />
+        <activity android:name=".javaactivity.Java24Activity" />
+        <activity android:name=".javaactivity.Java25Activity" />
+        <activity android:name=".javaactivity.Java26Activity" />
+        <activity android:name=".javaactivity.Java27Activity" />
+        <activity android:name=".javaactivity.Java28Activity"></activity>
     </application>
 
 </manifest>
