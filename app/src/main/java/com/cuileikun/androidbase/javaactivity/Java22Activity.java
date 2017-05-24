@@ -2,7 +2,7 @@ package com.cuileikun.androidbase.javaactivity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+import com.cuileikun.androidbase.R;
 public class Java22Activity extends AppCompatActivity {
 
     @Override
