@@ -252,9 +252,9 @@
             android:name=".provider.AccountProvider"
             android:authorities="com.itheima.provider" />
 
-        <activity android:name=".activity.JavaBaseActivity" />
+        <activity android:name=".javaactivity.JavaBaseActivity" />
         <activity android:name=".javaactivity.Java1Activity" />
-        <activity android:name=".javaactivity.Java2Activity" />
+        <activity android:name=".javaactivity.two.Java2Activity" />
         <activity android:name=".javaactivity.Java3Activity" />
         <activity android:name=".javaactivity.Java4Activity" />
         <activity android:name=".javaactivity.Java5Activity" />
@@ -280,7 +280,12 @@
         <activity android:name=".javaactivity.Java25Activity" />
         <activity android:name=".javaactivity.Java26Activity" />
         <activity android:name=".javaactivity.Java27Activity" />
-        <activity android:name=".javaactivity.Java28Activity"></activity>
+        <activity android:name=".javaactivity.Java28Activity" />
+        <activity android:name=".javaactivity.two.FirstBtnActivity" />
+        <activity android:name=".javaactivity.two.SecondBtnActivity" />
+        <activity android:name=".javaactivity.two.ThirdBtnActivity" />
+        <activity android:name=".javaactivity.two.FourthBtnActivity" />
+        <activity android:name=".javaactivity.two.FifthBtnActivity" />
     </application>
 
 </manifest>

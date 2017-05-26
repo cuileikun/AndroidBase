@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.cuileikun.androidbase.R;
+import com.cuileikun.androidbase.javaactivity.JavaBaseActivity;
 
 public class BaseActivity extends AppCompatActivity {
 

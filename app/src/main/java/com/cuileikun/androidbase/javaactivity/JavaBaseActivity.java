@@ -1,4 +1,4 @@
-package com.cuileikun.androidbase.activity;
+package com.cuileikun.androidbase.javaactivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,34 +7,7 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.cuileikun.androidbase.R;
-import com.cuileikun.androidbase.javaactivity.Java10Activity;
-import com.cuileikun.androidbase.javaactivity.Java11Activity;
-import com.cuileikun.androidbase.javaactivity.Java12Activity;
-import com.cuileikun.androidbase.javaactivity.Java13Activity;
-import com.cuileikun.androidbase.javaactivity.Java14Activity;
-import com.cuileikun.androidbase.javaactivity.Java15Activity;
-import com.cuileikun.androidbase.javaactivity.Java16Activity;
-import com.cuileikun.androidbase.javaactivity.Java17Activity;
-import com.cuileikun.androidbase.javaactivity.Java18Activity;
-import com.cuileikun.androidbase.javaactivity.Java19Activity;
-import com.cuileikun.androidbase.javaactivity.Java1Activity;
-import com.cuileikun.androidbase.javaactivity.Java20Activity;
-import com.cuileikun.androidbase.javaactivity.Java21Activity;
-import com.cuileikun.androidbase.javaactivity.Java22Activity;
-import com.cuileikun.androidbase.javaactivity.Java23Activity;
-import com.cuileikun.androidbase.javaactivity.Java24Activity;
-import com.cuileikun.androidbase.javaactivity.Java25Activity;
-import com.cuileikun.androidbase.javaactivity.Java26Activity;
-import com.cuileikun.androidbase.javaactivity.Java27Activity;
-import com.cuileikun.androidbase.javaactivity.Java28Activity;
-import com.cuileikun.androidbase.javaactivity.Java2Activity;
-import com.cuileikun.androidbase.javaactivity.Java3Activity;
-import com.cuileikun.androidbase.javaactivity.Java4Activity;
-import com.cuileikun.androidbase.javaactivity.Java5Activity;
-import com.cuileikun.androidbase.javaactivity.Java6Activity;
-import com.cuileikun.androidbase.javaactivity.Java7Activity;
-import com.cuileikun.androidbase.javaactivity.Java8Activity;
-import com.cuileikun.androidbase.javaactivity.Java9Activity;
+import com.cuileikun.androidbase.javaactivity.two.Java2Activity;
 
 public class JavaBaseActivity extends Activity implements View.OnClickListener {
     private RelativeLayout day_one_rl;
