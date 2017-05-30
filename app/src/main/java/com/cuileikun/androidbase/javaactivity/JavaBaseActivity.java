@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.cuileikun.androidbase.R;
+import com.cuileikun.androidbase.javaactivity.four.Java4Activity;
+import com.cuileikun.androidbase.javaactivity.three.Java3Activity;
 import com.cuileikun.androidbase.javaactivity.two.Java2Activity;
 
 public class JavaBaseActivity extends Activity implements View.OnClickListener {

@@ -255,8 +255,8 @@
         <activity android:name=".javaactivity.JavaBaseActivity" />
         <activity android:name=".javaactivity.Java1Activity" />
         <activity android:name=".javaactivity.two.Java2Activity" />
-        <activity android:name=".javaactivity.Java3Activity" />
-        <activity android:name=".javaactivity.Java4Activity" />
+        <activity android:name=".javaactivity.three.Java3Activity" />
+        <activity android:name=".javaactivity.four.Java4Activity" />
         <activity android:name=".javaactivity.Java5Activity" />
         <activity android:name=".javaactivity.Java6Activity" />
         <activity android:name=".javaactivity.Java7Activity" />
