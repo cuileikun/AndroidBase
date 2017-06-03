@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 import com.cuileikun.androidbase.R;
 import com.cuileikun.androidbase.javaactivity.five.Java5Activity;
 import com.cuileikun.androidbase.javaactivity.four.Java4Activity;
+import com.cuileikun.androidbase.javaactivity.seven.Java7Activity;
 import com.cuileikun.androidbase.javaactivity.six.Java6Activity;
 import com.cuileikun.androidbase.javaactivity.three.Java3Activity;
 import com.cuileikun.androidbase.javaactivity.two.Java2Activity;
