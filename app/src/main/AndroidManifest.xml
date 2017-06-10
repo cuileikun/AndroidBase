@@ -261,9 +261,9 @@
         <activity android:name=".javaactivity.six.Java6Activity" />
         <activity android:name=".javaactivity.seven.Java7Activity" />
         <activity android:name=".javaactivity.eight.Java8Activity" />
-        <activity android:name=".javaactivity.Java9Activity" />
-        <activity android:name=".javaactivity.Java10Activity" />
-        <activity android:name=".javaactivity.Java11Activity" />
+        <activity android:name=".javaactivity.nine.Java9Activity" />
+        <activity android:name=".javaactivity.ten.Java10Activity" />
+        <activity android:name=".javaactivity.eleven.Java11Activity" />
         <activity android:name=".javaactivity.Java12Activity" />
         <activity android:name=".javaactivity.Java13Activity" />
         <activity android:name=".javaactivity.Java14Activity" />
