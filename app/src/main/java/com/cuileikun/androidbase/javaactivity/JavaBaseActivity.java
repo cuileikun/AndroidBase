@@ -16,6 +16,7 @@ import com.cuileikun.androidbase.javaactivity.fourteen.Java14Activity;
 import com.cuileikun.androidbase.javaactivity.nine.Java9Activity;
 import com.cuileikun.androidbase.javaactivity.seven.Java7Activity;
 import com.cuileikun.androidbase.javaactivity.six.Java6Activity;
+import com.cuileikun.androidbase.javaactivity.sixteen.Java16Activity;
 import com.cuileikun.androidbase.javaactivity.ten.Java10Activity;
 import com.cuileikun.androidbase.javaactivity.thirteen.Java13Activity;
 import com.cuileikun.androidbase.javaactivity.three.Java3Activity;
