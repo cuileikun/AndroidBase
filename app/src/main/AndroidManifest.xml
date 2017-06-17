@@ -269,7 +269,7 @@
         <activity android:name=".javaactivity.fourteen.Java14Activity" />
         <activity android:name=".javaactivity.fifteen.Java15Activity" />
         <activity android:name=".javaactivity.sixteen.Java16Activity" />
-        <activity android:name=".javaactivity.Java17Activity" />
+        <activity android:name=".javaactivity.seventeen.Java17Activity" />
         <activity android:name=".javaactivity.Java18Activity" />
         <activity android:name=".javaactivity.Java19Activity" />
         <activity android:name=".javaactivity.Java20Activity" />
