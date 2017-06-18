@@ -26,6 +26,7 @@ import com.cuileikun.androidbase.javaactivity.three.Java3Activity;
 import com.cuileikun.androidbase.javaactivity.twelve.Java12Activity;
 import com.cuileikun.androidbase.javaactivity.twenty.Java20Activity;
 import com.cuileikun.androidbase.javaactivity.twentyone.Java21Activity;
+import com.cuileikun.androidbase.javaactivity.twentytwo.Java22Activity;
 import com.cuileikun.androidbase.javaactivity.two.Java2Activity;
 
 public class JavaBaseActivity extends Activity implements View.OnClickListener {

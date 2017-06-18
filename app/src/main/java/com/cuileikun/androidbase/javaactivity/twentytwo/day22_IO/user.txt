@@ -1,0 +1,4 @@
+#Mon Nov 24 16:09:35 CST 2014
+zhangsan=30
+lisi=100
+wangwu=50
