@@ -82,7 +82,6 @@ public class ContactActivity extends QkActivity {
         Uri data = Uri.parse("tel:" + phone);
         intent.setData(data);
         startActivity(intent);
-
     }
 
     class MyAdapter extends BaseAdapter {

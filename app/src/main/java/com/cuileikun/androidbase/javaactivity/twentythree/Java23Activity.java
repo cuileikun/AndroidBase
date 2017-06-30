@@ -1,4 +1,4 @@
-package com.cuileikun.androidbase.javaactivity;
+package com.cuileikun.androidbase.javaactivity.twentythree;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
