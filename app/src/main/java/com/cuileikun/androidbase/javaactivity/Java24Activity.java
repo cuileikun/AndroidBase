@@ -9,5 +9,6 @@ public class Java24Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java24);
+        //ceshi
     }
 }
