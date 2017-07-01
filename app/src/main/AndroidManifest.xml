@@ -276,7 +276,7 @@
         <activity android:name=".javaactivity.twentyone.Java21Activity" />
         <activity android:name=".javaactivity.twentytwo.Java22Activity" />
         <activity android:name=".javaactivity.twentythree.Java23Activity" />
-        <activity android:name=".javaactivity.Java24Activity" />
+        <activity android:name=".javaactivity.twentyfour.Java24Activity" />
         <activity android:name=".javaactivity.Java25Activity" />
         <activity android:name=".javaactivity.Java26Activity" />
         <activity android:name=".javaactivity.Java27Activity" />

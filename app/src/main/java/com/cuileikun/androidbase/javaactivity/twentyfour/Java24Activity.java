@@ -1,4 +1,4 @@
-package com.cuileikun.androidbase.javaactivity;
+package com.cuileikun.androidbase.javaactivity.twentyfour;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +9,5 @@ public class Java24Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java24);
-        //ceshi
     }
 }
