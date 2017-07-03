@@ -28,6 +28,7 @@ import com.cuileikun.androidbase.javaactivity.twenty.Java20Activity;
 import com.cuileikun.androidbase.javaactivity.twentyfive.Java25Activity;
 import com.cuileikun.androidbase.javaactivity.twentyfour.Java24Activity;
 import com.cuileikun.androidbase.javaactivity.twentyone.Java21Activity;
+import com.cuileikun.androidbase.javaactivity.twentysix.Java26Activity;
 import com.cuileikun.androidbase.javaactivity.twentythree.Java23Activity;
 import com.cuileikun.androidbase.javaactivity.twentytwo.Java22Activity;
 import com.cuileikun.androidbase.javaactivity.two.Java2Activity;
