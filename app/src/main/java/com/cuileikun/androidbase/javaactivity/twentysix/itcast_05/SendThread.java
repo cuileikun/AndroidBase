@@ -37,7 +37,7 @@ public class SendThread implements Runnable {
                 // DatagramPacket dp = new DatagramPacket(bys, bys.length,
                 // InetAddress.getByName("192.168.12.92"), 12345);
                 DatagramPacket dp = new DatagramPacket(bys, bys.length,
-                        InetAddress.getByName("192.168.3.121"), 12306);
+                        InetAddress.getByName("192.168.3.121"), 12316);
 
                 // 发送数据
                 ds.send(dp);
