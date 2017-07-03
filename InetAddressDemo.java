@@ -2,12 +2,13 @@ package cn.itcast_01;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+
 over
 /*
- * Èç¹ûÒ»¸öÀàÃ»ÓÐ¹¹Ôì·½·¨£º
- * A:³ÉÔ±È«²¿ÊÇ¾²Ì¬µÄ(Math,Arrays,Collections)
- * B:µ¥ÀýÉè¼ÆÄ£Ê½(Runtime)
- * C:ÀàÖÐÓÐ¾²Ì¬·½·¨·µ»Ø¸ÃÀàµÄ¶ÔÏó(InetAddress)
+ * ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
+ * A:ï¿½ï¿½Ô±È«ï¿½ï¿½ï¿½Ç¾ï¿½Ì¬ï¿½ï¿½(Math,Arrays,Collections)
+ * B:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£Ê½(Runtime)
+ * C:ï¿½ï¿½ï¿½ï¿½ï¿½Ð¾ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½(InetAddress)
  * 		class Demo {
  * 			private Demo(){}
  * 
@@ -16,8 +17,8 @@ over
  * 			}
  * 		}
  * 
- * ¿´InetAddressµÄ³ÉÔ±·½·¨£º
- * public static InetAddress getByName(String host):¸ù¾ÝÖ÷»úÃû»òÕßIPµØÖ·µÄ×Ö·û´®±íÊ¾µÃµ½IPµØÖ·¶ÔÏó
+ * ï¿½ï¿½InetAddressï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * public static InetAddress getByName(String host):ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½IPï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½Ãµï¿½IPï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½
  */
 public class InetAddressDemo {
 	public static void main(String[] args) throws UnknownHostException {
@@ -26,7 +27,7 @@ public class InetAddressDemo {
 		// InetAddress address = InetAddress.getByName("192.168.12.92");
 		InetAddress address = InetAddress.getByName("192.168.12.63");
 
-		// »ñÈ¡Á½¸ö¶«Î÷£ºÖ÷»úÃû£¬IPµØÖ·
+		// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½IPï¿½ï¿½Ö·
 		// public String getHostName()
 		String name = address.getHostName();
 		// public String getHostAddress()

@@ -279,7 +279,7 @@
         <activity android:name=".javaactivity.twentyfour.Java24Activity" />
         <activity android:name=".javaactivity.twentyfive.Java25Activity" />
         <activity android:name=".javaactivity.twentysix.Java26Activity" />
-        <activity android:name=".javaactivity.Java27Activity" />
+        <activity android:name=".javaactivity.twentyseven.Java27Activity" />
         <activity android:name=".javaactivity.Java28Activity" />
         <activity android:name=".javaactivity.two.FirstBtnActivity" />
         <activity android:name=".javaactivity.two.SecondBtnActivity" />
